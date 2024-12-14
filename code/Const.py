@@ -6,6 +6,7 @@ C_YELLOW = (255, 255, 128)
 C_WHITE = (255, 255, 255)
 C_GREEN = (0, 128, 0)
 C_CYAN = (0, 128, 128)
+C_BLACK = (0, 0, 0)
 
 # E
 EVENT_ENEMY = pygame.USEREVENT + 1
@@ -23,6 +24,11 @@ ENTITY_SPEED = {
     'Level2Bg2': 2,
     'Level2Bg3': 3,
     'Level2Bg4': 4,
+    'Level3Bg0': 0,  # Novo para Bg3
+    'Level3Bg1': 1,
+    'Level3Bg2': 2,
+    'Level3Bg3': 3,
+    'Level3Bg4': 4,
     'Player1': 3,
     'Player1Shot': 1,
     'Player2': 3,
@@ -31,6 +37,11 @@ ENTITY_SPEED = {
     'Enemy1Shot': 5,
     'Enemy2': 1,
     'Enemy2Shot': 2,
+    'Enemy3': 2,  # Velocidade para Enemy3
+    'Enemy3Shot': 3  # Velocidade dos disparos de Enemy3
+}
+ENTITY_MOVE_SPEED = {
+    'Enemy3': 2 # Velocidade de movimentação de Enemy3
 }
 
 ENTITY_HEALTH = {
@@ -46,6 +57,11 @@ ENTITY_HEALTH = {
     'Level2Bg2': 999,
     'Level2Bg3': 999,
     'Level2Bg4': 999,
+    'Level3Bg0': 999,  # Novo para Bg3
+    'Level3Bg1': 999,
+    'Level3Bg2': 999,
+    'Level3Bg3': 999,
+    'Level3Bg4': 999,
     'Player1': 300,
     'Player1Shot': 1,
     'Player2': 300,
@@ -54,6 +70,8 @@ ENTITY_HEALTH = {
     'Enemy1Shot': 1,
     'Enemy2': 60,
     'Enemy2Shot': 1,
+    'Enemy3': 80,  # Vida do Enemy3
+    'Enemy3Shot': 2  # Dano do tiro de Enemy3
 }
 
 ENTITY_DAMAGE = {
@@ -69,6 +87,11 @@ ENTITY_DAMAGE = {
     'Level2Bg2': 0,
     'Level2Bg3': 0,
     'Level2Bg4': 0,
+    'Level3Bg0': 0,  # Novo para Bg3
+    'Level3Bg1': 0,
+    'Level3Bg2': 0,
+    'Level3Bg3': 0,
+    'Level3Bg4': 0,
     'Player1': 1,
     'Player1Shot': 25,
     'Player2': 1,
@@ -77,6 +100,8 @@ ENTITY_DAMAGE = {
     'Enemy1Shot': 20,
     'Enemy2': 1,
     'Enemy2Shot': 15,
+    'Enemy3': 1,  # Dano por colisão de Enemy3
+    'Enemy3Shot': 25  # Dano dos disparos de Enemy3
 }
 
 ENTITY_SCORE = {
@@ -92,6 +117,12 @@ ENTITY_SCORE = {
     'Level2Bg2': 0,
     'Level2Bg3': 0,
     'Level2Bg4': 0,
+    'Level3Bg0': 0,  # Novo para Bg3
+    'Level3Bg1': 0,
+    'Level3Bg2': 0,
+    'Level3Bg3': 0,
+    'Level3Bg4': 0,
+    'Level3Bg5': 0,
     'Player1': 0,
     'Player1Shot': 0,
     'Player2': 0,
@@ -100,6 +131,8 @@ ENTITY_SCORE = {
     'Enemy1Shot': 0,
     'Enemy2': 125,
     'Enemy2Shot': 0,
+    'Enemy3': 150,  # Pontuação ao derrotar Enemy3
+    'Enemy3Shot': 0
 }
 
 ENTITY_SHOT_DELAY = {
@@ -107,8 +140,8 @@ ENTITY_SHOT_DELAY = {
     'Player2': 15,
     'Enemy1': 100,
     'Enemy2': 200,
+    'Enemy3': 150  # Tempo entre os disparos de Enemy3
 }
-
 # M
 MENU_OPTION = ('NEW GAME 1P',
                'NEW GAME 2P - COOPERATIVE',
